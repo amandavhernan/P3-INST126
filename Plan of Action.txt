@@ -1,0 +1,35 @@
+1. Suspicious Activities:
+
+To track suspicious behavior, we would have to define a function consisting of two conditional statements:
+The first conditional statement would check if any user logs into any of the systems more than 5 times in a single day.
+The second conditional statement would check if the user logs into any of the systems even once between 12:00 am to 5:00 am.
+Then, we will return the total count of suspicious activities.
+
+2. Irresponsible behavior:
+
+To track irresponsible behavior, we are going to have to make a list of all of the employees and make two conditional statements:
+The first conditional statement would look into the amount of times that each user logs into any of the systems and the other one could 
+look at how many times they log off of any of the systems. Then, an if statement could be implemented stating if the number of logins are greater than
+the number of log offs, then that would be marked as an irresponsible activity!
+Then, we would return the total amount of irresponsible activities per user and
+whenever the number of logins are greater than the number of log offs, it has to equal 1.
+
+3. System Glitch:
+This function is basically a reverse of the if statement for irresponsible behavior. So, to track system glitch, 
+we are going to have to, again, make a list of all of the employees and make two conditional statements:
+The first conditional statement would look into the amount of times that each user logs into any of the systems and the other one could 
+look at how many times they log off of any of the systems. Then, an if statement could be implemented stating if the number of logins are less than
+the number of log offs, then that would be flagged as a system glitch!
+Then, we would return the total amount of system glitches per user.
+
+4. Domain Count:
+To track domain count, we will use the same list from #2 (irresponsible behavior) and create another list with all of the unique domains
+and from there we can return how many employees belong to each domain.
+
+5. Additional Insights:
+
+We could analyze who works the most out of all of the employees by looking at the date and time that each employee logs in and logs out 
+and how often they log in to the workstation server
+
+In total, we will have at least 5 functions and one main dictionary data structure that returns all of the necessary information in each 
+function, making our code way more organized.

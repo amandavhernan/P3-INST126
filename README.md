@@ -11,7 +11,7 @@ The goal of this program is to issue four reports that provide insights in four 
 
 The code is composed of a total of five functions and one main dictionary data structure that will return all necessary information for each function. A function will be created for each report. There will a function to track suspicious activities, irresponsible behavior, and so on. By doing this, our code will be much more organized and cohesive. 
 
-When a user runs the program, it will first import the log file that contains all of the information needed to create the reports. 
+When a user runs the program, it will first import and read the log file that contains all of the information needed to create the reports. 
 
 ### Tracking suspicious activities
 

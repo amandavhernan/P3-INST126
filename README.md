@@ -3,7 +3,7 @@ Group Members: Amanda Hernández, Alexandra Glick
 
 This is our third project for INST126 at the University of Maryland. For this project, we are pretending to be a part of a
 professional working environment. Within most work environments, most software and digital activities are recorded using log files and that's where we come in. 
-First, it's important to understand that the files analyzed contain information spanning a month. There is also 50 different users or employees. So, we first assesed the problem statement and came up with a plan of action that detailed how we would work through the problem. 
+First, it's important to understand that the files analyzed contain information spanning a month. There are also 50 different employees. So, we first assesed the problem statement and came up with a plan of action that detailed how we would work through the problem. 
 
 The goal of this program is to issue four reports that provide insights in four areas: suspicious activity, irresponsible behavior, system glitches, and domian countes. We will also provide an additional report that looks at which employee works the most. Ultimately, these reports are supposed to be used by higher officials to make decisions. 
 

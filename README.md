@@ -1,4 +1,4 @@
-# Project 3
+# Project 3: Employee Log Report
 Group Members: Amanda Hernández, Alexandra Glick
 
 This is our third project for INST126 at the University of Maryland. For this project, we are pretending to be a part of a

@@ -19,7 +19,7 @@ The first function has two conditional statements. The first checks if an employ
 
 ### Tracking irresponsible behavior 
 
-The second function will contain a list of all 50 employees and have two conditional statements. The first conditional statement will count the number of times each employee has logged into any of the systems and the second statement will count the number of times each employee has logged off. An if statment stating if the number of logins are greater than the number of log offs will be implemented. Whenever that statement is true, it will be marked as an irresponsible activity and it will equal to one irresponsible activity. The program then returns the total amount of irresponsible activities per employee. 
+The second function will contain a list of all 50 employees and have two conditional statements. The first conditional statement will count the number of times each employee has logged into any of the systems and the second statement will count the number of times each employee has logged off. An if statement stating if the number of logins are greater than the number of log offs will be implemented. Whenever that statement is true, it will be marked as an irresponsible activity and it will equal to one irresponsible activity. The program then returns the total amount of irresponsible activities per employee. 
 
 ### Tracking system glitches
 

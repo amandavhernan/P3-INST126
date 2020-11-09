@@ -1,5 +1,7 @@
 # Project 3: Employee Log Report
-Group Members: Amanda Hernández, Alexandra Glick
+## Group Members: Amanda Hernández, Alexandra Glick
+
+## Overview
 
 This is our third project for INST126 at the University of Maryland. For this project, we are pretending to be a part of a
 professional working environment. Within most work environments, most software and digital activities are recorded using log files and that's where we come in. 

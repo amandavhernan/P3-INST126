@@ -34,3 +34,5 @@ The fourth function will be mainly composed of two lists and an if statement. Th
 ### Tracking the employees who work the most
 
 The fifth and final function of this program will analyze who of the 50 employees have worked the most throughout the month of May. The conditional statements will look at the dates and times that each employee logs in and out and how often they log in to the workstation server during the month. An if statement will be used to determine if an employee is logged into the workstation server for more than five hours, then that should be marked as working a full shift. Then, another if statement will be used to determine how many times each employee has logged in each day over the course of the entire month. There will also need to be elif statements to make sure that none of the log in/out attempts have been flagged as suspicious, irresponsible, or system glitches. By adding the elif statements, the program will return much more accurate and useful data. And lastly, the program returns the results of both if statements. 
+
+### Updates

@@ -31,7 +31,7 @@ Lastly, the program will return the total number of suspicious activities and ap
 
 ### Tracking irresponsible behavior 
 
-To generate our first report, we created a dictionary called "irresBehavior" and set a variable, named "irresCount" to 0 to begin with. Next, we utilized iterations in order to create expressions for the variables "loginCount" and "logoutCount." To implement this code correctly, we created two conditional statements; the first conditional statement counts the number of times each employee has logged into any of the systems and the second conditional statement  counts the number of times each employee has logged off. An if statement stating if the number of logins are greater than the number of log offs will be implemented. If that statement is true, it will be marked as an irresponsible activity and "irresCount" will increase by one.
+To generate our second report, we created a dictionary called "irresBehavior" and set a variable, named "irresCount" to 0 to begin with. Next, we utilized iterations in order to create expressions for the variables "loginCount" and "logoutCount." To implement this code correctly, we created two conditional statements; the first conditional statement counts the number of times each employee has logged into any of the systems and the second conditional statement  counts the number of times each employee has logged off. An if statement stating if the number of logins are greater than the number of log offs will be implemented. If that statement is true, it will be marked as an irresponsible activity and "irresCount" will increase by one.
 
 The following code represents our conditional statements:
 
@@ -47,15 +47,17 @@ Lastly, the program will return irresponsible behavior and append it into a new 
 
 ### Tracking system glitches
 
-The third function is essentially a reversed version of the second function (irresponsible behavior). The program will use the same list generated for the second function and work through two more conditional statements. Again, these statements will look at how many times each employee logs on and off of any of the systems. Similar to the second function, this part of the program will also have an if statement stating that if the number of log offs are greater than log ins, it will be flagged as a system glitch. Whenever this is statement is true, it will equal to one system glitch. And the program will return the total amount of system glitches per employee.
+To generate our third report, we created a dictionary called "glitch" and set a variable named "glitchCount" to 0 to begin with. Next, we utilized the same exact iterations from the irresponsible behavior implementation in order to create expressions for the variables "loginCount" and "logoutCount." This report is essentially a reversed version of the implementation for the irresponsible behavior report. So, for the implementation of system glitches, we simply swapped the positions of "loginCount" and "logoutCount" in the first conditional statement from the irresponsible behavior code. After running this program, system glitches will be returned and appended to a new text file, called "glitch_report.txt."
 
 ### Tracking domain counts
 
 The fourth function will be mainly composed of two lists and an if statement. The program will use the same list of employees from the second and third function. It will also use another list with all of the unique domains. The if statement will allow the user to see which employees belong to each unique domain. Lastly, the program will return how many employees belong to each domian and a list of the unique names.
 
-### Tracking the employees who work the most
+### Tracking the employees who work the most (not implemented)
 
-The fifth and final function of this program will analyze who of the 50 employees have worked the most throughout the month of May. The conditional statements will look at the dates and times that each employee logs in and out and how often they log in to the workstation server during the month. An if statement will be used to determine if an employee is logged into the workstation server for more than five hours, then that should be marked as working a full shift. Then, another if statement will be used to determine how many times each employee has logged in each day over the course of the entire month. There will also need to be elif statements to make sure that none of the log in/out attempts have been flagged as suspicious, irresponsible, or system glitches. By adding the elif statements, the program will return much more accurate and useful data. And lastly, the program returns the results of both if statements. 
+For the fifth and final function of this program, we wanted to create a function that would have analyzed who out of the 50 employees have worked the most throughout the month of May. The conditional statements would have looked at the dates and times that each employee logged in and out and how often they logged in to the workstation server during the month. An if statement would have been used to determine if an employee was logged into the workstation server for more than five hours, then that should be marked as working a full shift. Then, another if statement would have been used to determine how many times each employee has logged in each day over the course of the entire month. There would have also needed to be elif statements to make sure that none of the log in/out attempts have been flagged as suspicious, irresponsible, or system glitches. By adding the elif statements, the program would have returned much more accurate and useful data. And lastly, the program would have returned the results of both if statements.
+
+Unfortunately, we spent an incredible amount of time trying to implement this code, but we couldn't get it to function.
 
 ### Updates:
 

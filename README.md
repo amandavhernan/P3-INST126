@@ -77,4 +77,4 @@ Unfortunately, we spent an incredible amount of time trying to implement this co
 
 2. We also had a difficult time trying to write the code into a text file. At first, we wanted to make one function for every report; however, we quickly realized that the "domain_report.txt" file is differently formatted than every other text file. So, to solve this issue, we made one function that genereates the reports into text files for suspicious activities, irresponsible behavior, and system glitches and implemented code into the domain count cell to generate its report into a text file separately.
 
-3. 
+3. When running the entire program, we would often directly run the code starting in the middle. And every time we did that, an error would occur stating that a specific variable is undefined. To solve this problem, we have to make sure to run the program from the beginning every single time to make sure that every variable and dictionary is being taken into consideration.

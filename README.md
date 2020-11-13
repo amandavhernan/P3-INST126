@@ -15,21 +15,18 @@ At first, we were expecting our code to consist of a total of five functions and
 
 ### Tracking suspicious activities
 
-To generate our first report, we created a dictionary called "susActivity" and set a variable, named "susCount" to 0. Next, we utilized iterations in order to create expressions for the variables "loginCount" and "lateLogin." Next, we implemented two conditional statements; the first conditional statement checks if an employee logged into any of the system servers (mailserver.local, myworkstation.local, or webserver.local) more than five times in one single day. The second conditional statement checks if any employees logged in between 12:00 a.m. and 5:00 a.m. in one single day. Those who logged in more than five times or  in between 12-5 a.m. in one single day will be marked as suspicious. The following code represents our conditional statements: 
+To generate our first report, we created a dictionary called "susActivity" and set a variable, named "susCount" to 0. Next, we utilized iterations in order to create expressions for the variables "loginCount" and "lateLogin." Next, we implemented two conditional statements; the first conditional statement checks if an employee logged into any of the system servers (mailserver.local, myworkstation.local, or webserver.local) more than five times in one single day. The second conditional statement checks if any employees logged in between 12:00 a.m. and 5:00 a.m. in one single day. Those who logged in more than five times or  in between 12-5 a.m. in one single day will be marked as suspicious. 
 
-if loginCount > 5 or lateLogin:
+The following code represents our conditional statements:
 
-      susCount += 1
-      
-      if user_email in susActivity:
-      
-           susActivity[user_email].append(date)
-           
-      else:
-           susActivity[user_email] = [date]
-           
-      sorted(susActivity[user_email])
-    
+      if loginCount > 5 or lateLogin:
+            susCount += 1
+            if user_email in susActivity:
+                susActivity[user_email].append(date)
+            else:
+                susActivity[user_email] = [date]
+            sorted(susActivity[user_email])
+
 Lastly, the program will return the total number of suspicious activities and append it into a new text file, called "suspicious_report.txt."
 
 ### Tracking irresponsible behavior 

@@ -74,3 +74,7 @@ Unfortunately, we spent an incredible amount of time trying to implement this co
 ### Errors:
 
 1. When creating our global dictionary, we first used the ".read" function to read the file. However, when we did this, we kept getting an error stating that all of the list indexes for the lines of the text file were "out of range." At first, we honestly didn't know why this was happening at all and tried several different things to fix this, but then we finally realized that all we had to do was simply change it to ".readlines."
+
+2. We also had a difficult time trying to write the code into a text file. At first, we wanted to make one function for every report; however, we quickly realized that the "domain_report.txt" file is differently formatted than every other text file. So, to solve this issue, we made one function that genereates the reports into text files for suspicious activities, irresponsible behavior, and system glitches and implemented code into the domain count cell to generate its report into a text file separately.
+
+3. 

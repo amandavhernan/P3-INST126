@@ -35,7 +35,7 @@ To generate our first report, we created a dictionary called "irresBehavior" and
 
 The following code represents our conditional statements:
 
-if loginCount > logoutCount:
+      if loginCount > logoutCount:
             irresCount += 1
             if user_email in irresBehavior:
                 irresBehavior[user_email].append(date)

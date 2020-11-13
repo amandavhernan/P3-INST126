@@ -73,4 +73,4 @@ Unfortunately, we spent an incredible amount of time trying to implement this co
 
 ### Errors:
 
-1. 
+1. When creating our global dictionary, we first used the ".read" function to read the file. However, when we did this, we kept getting an error stating that all of the list indexes for the lines of the text file were "out of range." At first, we honestly didn't know why this was happening at all and tried several different things to fix this, but then we finally realized that all we had to do was simply change it to ".readlines."

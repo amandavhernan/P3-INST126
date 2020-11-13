@@ -51,7 +51,19 @@ To generate our third report, we created a dictionary called "glitch" and set a 
 
 ### Tracking domain counts
 
-The fourth function will be mainly composed of two lists and an if statement. The program will use the same list of employees from the second and third function. It will also use another list with all of the unique domains. The if statement will allow the user to see which employees belong to each unique domain. Lastly, the program will return how many employees belong to each domian and a list of the unique names.
+To generate our last report, we created one more dictionary, called "domainsDict," and used the "keys" function to access the list of emails from the "logsDict" dictionary. This implementation consisted of a for loop and a conditional statement. Overall, this implementation allowed every unique domain to be printed out into a new text file along with the number of users registered within each domain.
+
+The following code represents our conditional statements:
+
+      for user_email in user_emailList:
+      emailParts = user_email.split('@')
+      domain = emailParts[1]
+      if domain in domainsDict:
+            domainsDict[domain] += 1
+      else:
+            domainsDict[domain] = 1
+            
+Lastly, the program will return domain counts and append it into a new text file, called "domain_report.txt."
 
 ### Tracking the employees who work the most (not implemented)
 
@@ -59,6 +71,6 @@ For the fifth and final function of this program, we wanted to create a function
 
 Unfortunately, we spent an incredible amount of time trying to implement this code, but we couldn't get it to function.
 
-### Updates:
+### Errors:
 
-One concept of this project that we had trouble with was
+1. 

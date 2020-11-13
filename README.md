@@ -15,7 +15,7 @@ At first, we were expecting our code to consist of a total of five functions and
 
 ### Tracking suspicious activities
 
-To generate our first report, we created a dictionary called "susActivity" and set a variable, named "susCount" to 0. Next, we utilized iterations in order to create expressions for the variables "loginCount" and "lateLogin." Next, we implemented two conditional statements; the first conditional statement checks if an employee logged into any of the system servers (mailserver.local, myworkstation.local, or webserver.local) more than five times in one single day. The second conditional statement checks if any employees logged in between 12:00 a.m. and 5:00 a.m. in one single day. Those who logged in more than five times or  in between 12-5 a.m. in one single day will be marked as suspicious. 
+To generate our first report, we created a dictionary called "susActivity" and set a variable, named "susCount" to 0 to begin with. Next, we utilized iterations in order to create expressions for the variables "loginCount" and "lateLogin." Next, we implemented two conditional statements; the first conditional statement checks if an employee logged into any of the system servers (mailserver.local, myworkstation.local, or webserver.local) more than five times in one single day. The second conditional statement checks if any employees logged in between 12:00 a.m. and 5:00 a.m. in one single day. Those who logged in more than five times or  in between 12-5 a.m. in one single day will be marked as suspicious. 
 
 The following code represents our conditional statements:
 
@@ -31,7 +31,19 @@ Lastly, the program will return the total number of suspicious activities and ap
 
 ### Tracking irresponsible behavior 
 
-The second function will contain a list of all 50 employees and have two conditional statements. The first conditional statement will count the number of times each employee has logged into any of the systems and the second statement will count the number of times each employee has logged off. An if statement stating if the number of logins are greater than the number of log offs will be implemented. Whenever that statement is true, it will be marked as an irresponsible activity and it will equal to one irresponsible activity. The program then returns the total amount of irresponsible activities per employee. 
+To generate our first report, we created a dictionary called "irresBehavior" and set a variable, named "irresCount" to 0 to begin with. Next, we utilized iterations in order to create expressions for the variables "loginCount" and "logoutCount." To implement this code correctly, we created two conditional statements; the first conditional statement counts the number of times each employee has logged into any of the systems and the second conditional statement  counts the number of times each employee has logged off. An if statement stating if the number of logins are greater than the number of log offs will be implemented. If that statement is true, it will be marked as an irresponsible activity and "irresCount" will increase by one.
+
+The following code represents our conditional statements:
+
+if loginCount > logoutCount:
+            irresCount += 1
+            if user_email in irresBehavior:
+                irresBehavior[user_email].append(date)
+            else:
+                irresBehavior[user_email] = [date]
+            sorted(irresBehavior[user_email])
+
+Lastly, the program will return irresponsible behavior and append it into a new text file, called "irresponsible_report.txt."
 
 ### Tracking system glitches
 

@@ -11,7 +11,24 @@ The goal of this program is to issue four reports that provide insights in four 
 
 ## How it works
 
-At first, we were expecting our code to consist of a total of five functions and one main dictionary data structure that will return all necessary information for each function; however, things didn't seem to go the way we had planned. After discussing this for a while, we decided to create only 2 functions, "logFile" and "writtenReport." The "logFile" function was created to read the userlog.log and store that data into one big dictionary, named "logsDict," consisting of several rows and columns includuing information about the users. The first column in each row represents the "Date and Time" of the activity. The second column of each row represents the "User Activity", including "login" and "logout." The third column of every row represents the "Server" from which the activity of the user has occurred and the fourth and final column gives the specific Email-ID of the user. To generate each report using the information in the dictionary, we cohesively and in an organized manner generated code to track suspicious activities, irresponsible behavior, system glitch, and domain count. When a user first runs our program, the log file will be read and stored into the dictionary "logsDict." Next, the "writtenReport" function will be generated, giving each report the correct instructions to be printed into each report file. Lastly, the suspicious activities, irresponsible behavior, system glitch, and domain count reports will be implemented respectively. 
+At first, we were expecting our code to consist of a total of five functions and one main dictionary data structure that will return all necessary information for each function; however, things didn't seem to go the way we had planned. After discussing this for a while, we decided to create only 1 functions, "logFile." The "logFile" function was created to read the userlog.log and store that data into one big dictionary, named "logsDict," consisting of several rows and columns includuing information about the users. The first column in each row represents the "Date and Time" of the activity. The second column of each row represents the "User Activity", including "login" and "logout." The third column of every row represents the "Server" from which the activity of the user has occurred and the fourth and final column gives the specific Email-ID of the user. To generate each report using the information in the dictionary, we cohesively and in an organized manner generated code to track suspicious activities, irresponsible behavior, system glitch, and domain count. When a user first runs our program, the log file will be read and stored into the dictionary "logsDict." Next, the suspicious activities, irresponsible behavior, system glitch, and domain count reports will be implemented respectively and within each cell, there is code that prints out each report into a seaprate text file.
+
+The code that prints out the suspicious activities, irresponsible behavior, system glitch reports looks like this:
+
+      new_file = open("fileName", "x")
+      new_file.write("==============================\n")
+      new_file.write(f"=== {title} ({str(count)} cases) ===\n")
+      new_file.write("==============================\n")
+
+The code that prints out the domain count report is different and looks like this:
+
+      new_file = open("domain_report.txt", "x")
+      new_file.write("==============================\n")
+      new_file.write(f"=== DOMAIN COUNT ({str(len(domainsDict))} DOMAINS) ===\n")
+      new_file.write("==============================\n")
+
+      for domain in domainsDict:
+            new_file.write(f"{domain}\t\t{domainsDict[domain]}\n")
 
 ### Tracking suspicious activities
 
@@ -75,6 +92,6 @@ Unfortunately, we spent an incredible amount of time trying to implement this co
 
 1. When creating our global dictionary, we first used the ".read" function to read the file. However, when we did this, we kept getting an error stating that all of the list indexes for the lines of the text file were "out of range." At first, we honestly didn't know why this was happening at all and tried several different things to fix this, but then we finally realized that all we had to do was simply change it to ".readlines."
 
-2. We also had a difficult time trying to write the code into a text file. At first, we wanted to make one function for every report; however, we quickly realized that the "domain_report.txt" file is differently formatted than every other text file. So, to solve this issue, we made one function that genereates the reports into text files for suspicious activities, irresponsible behavior, and system glitches and implemented code into the domain count cell to generate its report into a text file separately.
+2. We also had a difficult time trying to write the code into a text file. At first, we wanted to make one function for every report; however, we quickly realized that the "domain_report.txt" file is differently formatted than every other text file. So, to solve this issue, we made code that genereates the reports into text files for suspicious activities, irresponsible behavior, and system glitches and implemented code into the domain count cell to generate its report into a text file separately.
 
 3. When running the entire program, we would often directly run the code starting in the middle. And every time we did that, an error would occur stating that a specific variable is undefined. To solve this problem, we have to make sure to run the program from the beginning every single time to make sure that every variable and dictionary is being taken into consideration.
